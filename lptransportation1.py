@@ -53,6 +53,7 @@ Sk = 50
 ### Decision Variables
 #### Notation Legend Xij: where i is the factory and j is the warehouse
 
+
 Xab = LpVariable("A to B", 0, None, LpInteger)
 Xac = LpVariable("A to C", 0, None, LpInteger)
 Xad = LpVariable("A to D", 0, None, LpInteger)
