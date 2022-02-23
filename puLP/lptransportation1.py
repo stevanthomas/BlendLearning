@@ -53,18 +53,19 @@ Sk = 50
 ### Decision Variables
 #### Notation Legend Xij: where i is the factory and j is the warehouse
 
-Xab = LpVariable("A to B", None, None, LpInteger)
-Xac = LpVariable("A to C", None, None, LpInteger)
-Xad = LpVariable("A to D", None, None, LpInteger)
-Xam = LpVariable("A to M", None, None, LpInteger)
-Xeb = LpVariable("E to B", None, None, LpInteger)
-Xec = LpVariable("E to C", None, None, LpInteger)
-Xed = LpVariable("E to D", None, None, LpInteger)
-Xem = LpVariable("E to M", None, None, LpInteger)
-Xkb = LpVariable("K to B", None, None, LpInteger)
-Xkc = LpVariable("K to C", None, None, LpInteger)
-Xkd = LpVariable("K to D", None, None, LpInteger)
-Xkm = LpVariable("K to M", None, None, LpInteger)
+
+Xab = LpVariable("A to B", 0, None, LpInteger)
+Xac = LpVariable("A to C", 0, None, LpInteger)
+Xad = LpVariable("A to D", 0, None, LpInteger)
+Xam = LpVariable("A to M", 0, None, LpInteger)
+Xeb = LpVariable("E to B", 0, None, LpInteger)
+Xec = LpVariable("E to C", 0, None, LpInteger)
+Xed = LpVariable("E to D", 0, None, LpInteger)
+Xem = LpVariable("E to M", 0, None, LpInteger)
+Xkb = LpVariable("K to B", 0, None, LpInteger)
+Xkc = LpVariable("K to C", 0, None, LpInteger)
+Xkd = LpVariable("K to D", 0, None, LpInteger)
+Xkm = LpVariable("K to M", 0, None, LpInteger)
 
 ### Optimization Function
 #### Minimizing Costs by multiplying unit cost and units shipped

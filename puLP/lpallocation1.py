@@ -1,5 +1,4 @@
 from pulp import *
-import pandas as pd
 
 '''
 ###Question
